@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC2A73523B28A1500A2E410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A73423B28A1500A2E410 /* AppDelegate.swift */; };
+		BFC2A73923B28A1500A2E410 /* RentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A73823B28A1500A2E410 /* RentalViewController.swift */; };
+		BFC2A73E23B28A1700A2E410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC2A73D23B28A1700A2E410 /* Assets.xcassets */; };
+		BFC2A74123B28A1700A2E410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC2A73F23B28A1700A2E410 /* LaunchScreen.storyboard */; };
+		BFC2A75723B28A8300A2E410 /* RentalStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A75623B28A8300A2E410 /* RentalStateMachine.swift */; };
+		BFC2A75E23B28B3000A2E410 /* VehicleControlServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A75D23B28B3000A2E410 /* VehicleControlServiceType.swift */; };
+		BFC2A76023B2A24100A2E410 /* RentalPreperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A75F23B2A24100A2E410 /* RentalPreperationState.swift */; };
+		BFC2A76223B2A2B500A2E410 /* RideState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A76123B2A2B500A2E410 /* RideState.swift */; };
+		BFC2A76423B2AAED00A2E410 /* ParkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A76323B2AAED00A2E410 /* ParkState.swift */; };
+		BFC2A76623B2AAFB00A2E410 /* EndRentalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A76523B2AAFB00A2E410 /* EndRentalState.swift */; };
+		BFC2A76823B2B11400A2E410 /* BluetoothVehicleControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A76723B2B11400A2E410 /* BluetoothVehicleControlService.swift */; };
+		BFC2A76A23B2B12300A2E410 /* CloudboxxVehicleControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A76923B2B12300A2E410 /* CloudboxxVehicleControlService.swift */; };
+		BFDBF70123B3BC5900B0A347 /* RentalPreparationStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBF70023B3BC5900B0A347 /* RentalPreparationStateTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFC2A74823B28A1700A2E410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC2A72923B28A1500A2E410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC2A73023B28A1500A2E410;
+			remoteInfo = StateMachineSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFC2A73123B28A1500A2E410 /* StateMachineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC2A73423B28A1500A2E410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC2A73823B28A1500A2E410 /* RentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalViewController.swift; sourceTree = "<group>"; };
+		BFC2A73D23B28A1700A2E410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC2A74023B28A1700A2E410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC2A74223B28A1700A2E410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC2A74723B28A1700A2E410 /* StateMachineSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC2A74D23B28A1700A2E410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC2A75623B28A8300A2E410 /* RentalStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalStateMachine.swift; sourceTree = "<group>"; };
+		BFC2A75D23B28B3000A2E410 /* VehicleControlServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleControlServiceType.swift; sourceTree = "<group>"; };
+		BFC2A75F23B2A24100A2E410 /* RentalPreperationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalPreperationState.swift; sourceTree = "<group>"; };
+		BFC2A76123B2A2B500A2E410 /* RideState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideState.swift; sourceTree = "<group>"; };
+		BFC2A76323B2AAED00A2E410 /* ParkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkState.swift; sourceTree = "<group>"; };
+		BFC2A76523B2AAFB00A2E410 /* EndRentalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndRentalState.swift; sourceTree = "<group>"; };
+		BFC2A76723B2B11400A2E410 /* BluetoothVehicleControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothVehicleControlService.swift; sourceTree = "<group>"; };
+		BFC2A76923B2B12300A2E410 /* CloudboxxVehicleControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudboxxVehicleControlService.swift; sourceTree = "<group>"; };
+		BFDBF70023B3BC5900B0A347 /* RentalPreparationStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalPreparationStateTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC2A72E23B28A1500A2E410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC2A74423B28A1700A2E410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC2A72823B28A1500A2E410 = {
+			isa = PBXGroup;
+			children = (
+				BFC2A73323B28A1500A2E410 /* StateMachineSample */,
+				BFC2A74A23B28A1700A2E410 /* StateMachineSampleTests */,
+				BFC2A73223B28A1500A2E410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC2A73223B28A1500A2E410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A73123B28A1500A2E410 /* StateMachineSample.app */,
+				BFC2A74723B28A1700A2E410 /* StateMachineSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC2A73323B28A1500A2E410 /* StateMachineSample */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A74223B28A1700A2E410 /* Info.plist */,
+				BFC2A73F23B28A1700A2E410 /* LaunchScreen.storyboard */,
+				BFC2A73423B28A1500A2E410 /* AppDelegate.swift */,
+				BFC2A75A23B28A9D00A2E410 /* Model */,
+				BFC2A75923B28A9700A2E410 /* Services */,
+				BFC2A75823B28A8700A2E410 /* View Controllers */,
+				BFC2A73D23B28A1700A2E410 /* Assets.xcassets */,
+			);
+			path = StateMachineSample;
+			sourceTree = "<group>";
+		};
+		BFC2A74A23B28A1700A2E410 /* StateMachineSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A74D23B28A1700A2E410 /* Info.plist */,
+				BFDBF70023B3BC5900B0A347 /* RentalPreparationStateTests.swift */,
+			);
+			path = StateMachineSampleTests;
+			sourceTree = "<group>";
+		};
+		BFC2A75823B28A8700A2E410 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A75B23B28AA600A2E410 /* Rental */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BFC2A75923B28A9700A2E410 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A75C23B28B1400A2E410 /* Vehicle Control */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BFC2A75A23B28A9D00A2E410 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFC2A75B23B28AA600A2E410 /* Rental */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A73823B28A1500A2E410 /* RentalViewController.swift */,
+				BFC2A75623B28A8300A2E410 /* RentalStateMachine.swift */,
+				BFC2A75F23B2A24100A2E410 /* RentalPreperationState.swift */,
+				BFC2A76123B2A2B500A2E410 /* RideState.swift */,
+				BFC2A76323B2AAED00A2E410 /* ParkState.swift */,
+				BFC2A76523B2AAFB00A2E410 /* EndRentalState.swift */,
+			);
+			path = Rental;
+			sourceTree = "<group>";
+		};
+		BFC2A75C23B28B1400A2E410 /* Vehicle Control */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2A75D23B28B3000A2E410 /* VehicleControlServiceType.swift */,
+				BFC2A76723B2B11400A2E410 /* BluetoothVehicleControlService.swift */,
+				BFC2A76923B2B12300A2E410 /* CloudboxxVehicleControlService.swift */,
+			);
+			path = "Vehicle Control";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC2A73023B28A1500A2E410 /* StateMachineSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC2A75023B28A1700A2E410 /* Build configuration list for PBXNativeTarget "StateMachineSample" */;
+			buildPhases = (
+				BFC2A72D23B28A1500A2E410 /* Sources */,
+				BFC2A72E23B28A1500A2E410 /* Frameworks */,
+				BFC2A72F23B28A1500A2E410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateMachineSample;
+			productName = StateMachineSample;
+			productReference = BFC2A73123B28A1500A2E410 /* StateMachineSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFC2A74623B28A1700A2E410 /* StateMachineSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC2A75323B28A1700A2E410 /* Build configuration list for PBXNativeTarget "StateMachineSampleTests" */;
+			buildPhases = (
+				BFC2A74323B28A1700A2E410 /* Sources */,
+				BFC2A74423B28A1700A2E410 /* Frameworks */,
+				BFC2A74523B28A1700A2E410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC2A74923B28A1700A2E410 /* PBXTargetDependency */,
+			);
+			name = StateMachineSampleTests;
+			productName = StateMachineSampleTests;
+			productReference = BFC2A74723B28A1700A2E410 /* StateMachineSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC2A72923B28A1500A2E410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Cagdas Altinkaya";
+				TargetAttributes = {
+					BFC2A73023B28A1500A2E410 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					BFC2A74623B28A1700A2E410 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = BFC2A73023B28A1500A2E410;
+					};
+				};
+			};
+			buildConfigurationList = BFC2A72C23B28A1500A2E410 /* Build configuration list for PBXProject "StateMachineSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC2A72823B28A1500A2E410;
+			productRefGroup = BFC2A73223B28A1500A2E410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC2A73023B28A1500A2E410 /* StateMachineSample */,
+				BFC2A74623B28A1700A2E410 /* StateMachineSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC2A72F23B28A1500A2E410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC2A74123B28A1700A2E410 /* LaunchScreen.storyboard in Resources */,
+				BFC2A73E23B28A1700A2E410 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC2A74523B28A1700A2E410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC2A72D23B28A1500A2E410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC2A75E23B28B3000A2E410 /* VehicleControlServiceType.swift in Sources */,
+				BFC2A76023B2A24100A2E410 /* RentalPreperationState.swift in Sources */,
+				BFC2A76423B2AAED00A2E410 /* ParkState.swift in Sources */,
+				BFC2A73923B28A1500A2E410 /* RentalViewController.swift in Sources */,
+				BFC2A75723B28A8300A2E410 /* RentalStateMachine.swift in Sources */,
+				BFC2A76823B2B11400A2E410 /* BluetoothVehicleControlService.swift in Sources */,
+				BFC2A76623B2AAFB00A2E410 /* EndRentalState.swift in Sources */,
+				BFC2A76A23B2B12300A2E410 /* CloudboxxVehicleControlService.swift in Sources */,
+				BFC2A73523B28A1500A2E410 /* AppDelegate.swift in Sources */,
+				BFC2A76223B2A2B500A2E410 /* RideState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC2A74323B28A1700A2E410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDBF70123B3BC5900B0A347 /* RentalPreparationStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFC2A74923B28A1700A2E410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC2A73023B28A1500A2E410 /* StateMachineSample */;
+			targetProxy = BFC2A74823B28A1700A2E410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFC2A73F23B28A1700A2E410 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC2A74023B28A1700A2E410 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC2A74E23B28A1700A2E410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFC2A74F23B28A1700A2E410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC2A75123B28A1700A2E410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StateMachineSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.calt.StateMachineSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFC2A75223B28A1700A2E410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StateMachineSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.calt.StateMachineSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFC2A75423B28A1700A2E410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StateMachineSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.calt.StateMachineSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachineSample.app/StateMachineSample";
+			};
+			name = Debug;
+		};
+		BFC2A75523B28A1700A2E410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StateMachineSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.calt.StateMachineSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachineSample.app/StateMachineSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC2A72C23B28A1500A2E410 /* Build configuration list for PBXProject "StateMachineSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC2A74E23B28A1700A2E410 /* Debug */,
+				BFC2A74F23B28A1700A2E410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC2A75023B28A1700A2E410 /* Build configuration list for PBXNativeTarget "StateMachineSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC2A75123B28A1700A2E410 /* Debug */,
+				BFC2A75223B28A1700A2E410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC2A75323B28A1700A2E410 /* Build configuration list for PBXNativeTarget "StateMachineSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC2A75423B28A1700A2E410 /* Debug */,
+				BFC2A75523B28A1700A2E410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC2A72923B28A1500A2E410 /* Project object */;
+}
